@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro escola</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Formulário de Cadastro</h1>
+    </header>
+    <main>
+      <div class="form">
+        <div class="campo">
+          <label for="nome">Nome</label>
+          <input type="text" name="nome" id="nome" required />
+        </div>
+        <div class="campo">
+          <label for="email">E-mail</label>
+          <input type="email" name="email" id="email" required />
+        </div>
+        <div class="campo">
+          <label for="tipo">Professor</label>
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="slider round" id="swicth"></span>
+          </label>
+        </div>
+        <button class="salvar" onclick="salvar()">Enviar</button>
+      </div>
+
+      <div class="list-container">
+        <header class="header-lista">
+          <h1>Lista</h1>
+        </header>
+
+        <div class="user-list" id="user-list"></div>
+      </div>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
